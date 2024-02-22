@@ -1,4 +1,4 @@
-class Solution {
+public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         // Initialize a pointer to the start of the array
         int l=0;
@@ -19,7 +19,7 @@ class Solution {
         // Initialize an array
         int [] nums = {0,1,0,3,12};
         // Create a Solution object
-        Solution s = new Solution();
+        MoveZeroes s = new MoveZeroes();
         // Call the moveZeroes method on the Solution object
         s.moveZeroes(nums);
         // Print the elements of the array

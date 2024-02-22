@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class CanPlaceFlowers {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         // Create an ArrayList to represent the flowerbed with extra 0s at the beginning and end
         List<Integer> f = new ArrayList<>();
