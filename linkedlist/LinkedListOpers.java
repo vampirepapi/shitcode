@@ -75,6 +75,7 @@ public class LinkedListOpers {
         }
         if(k==1){
             head = head.next;
+            return;
         }
         int counter = 0;
         Node temp = head;
@@ -97,6 +98,7 @@ public class LinkedListOpers {
         }
         if (head.data == value) {
             head = head.next;
+            return;
         }
         Node temp = head;
         Node prev = null;
