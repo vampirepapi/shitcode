@@ -10,7 +10,7 @@ package linkedlists;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+public class PalindromeLinkedList {
     public ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;

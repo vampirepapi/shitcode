@@ -100,7 +100,7 @@ class ListNode {
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+public class MiddleoftheLinkedList {
     public ListNode middleNode(ListNode head) {
 
         ListNode slow = head;
