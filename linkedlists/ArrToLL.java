@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlists;
 
 // Node class to represent each element in the linked list
 class Node{
