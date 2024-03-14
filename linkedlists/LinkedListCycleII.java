@@ -1,7 +1,5 @@
 package linkedlists;
 
-import java.util.HashSet;
-
 /**
  * Definition for singly-linked list.
  * class ListNode {
