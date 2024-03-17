@@ -11,7 +11,7 @@ class SortArray {
     private void mergeSort(int[] nums, int start, int end) {
         // If there is only 1 element in the array, it is already sorted
         if (start < end) {
-            // Calculate the middle index
+            // Calculate the middle i ndex
             int mid = (start + end) / 2;
             
             // Call mergeSort for subproblems (left and right halves)
@@ -53,6 +53,14 @@ class SortArray {
         // Copy the merged subarray from the temporary array back to the original array
         for (int k2 = 0; k2 < temp.length; k2++) {
             nums[start + k2] = temp[k2];
+        }
+    }
+    public static void main(String[] args) {
+        int[] nums = {5,2,3,1};
+        SortArray obj = new SortArray();
+        int[] sortArray = obj.sortArray(nums);
+        for (int i : sortArray) {
+            System.out.println(i);
         }
     }
 }

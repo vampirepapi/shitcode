@@ -1,45 +1,39 @@
+package linkedlists;
 
+class Solution {
+    public void sortColors(int[] nums) {
+        //3 counters to store the vals
+        int cnt0=0;
+        int cnt1=0;
+        int cnt2=0;
 
-public class Solution {
-    public ListNode removeNthFromEnd(ListNode head, int n) {
-        int lenLL = lenOfLL(head);
-        int newN = lenLL - n +1;
-        int i =0;
-        ListNode temp = head;
-        ListNode prev = null;
-        while (temp!=null) {
-            i++;
-            if (i==newN) {
-                if (prev != null) {
-                    prev.next = prev.next.next;
-                } else {
-                    head = head.next;
-                }
+        for (int i : nums) {
+            if (i==0) {
+                cnt0++;
             }
-            prev = temp;
-            temp=temp.next;
+            else if (i==1) {
+                cnt1++;
+            }
+            else{
+                cnt2++;
+            }
         }
-        return head;
-    }
-
-    public static int lenOfLL(ListNode head) {
-        ListNode temp = head;
-        int len = 0;
-        while (temp!=null) {
-            len++;
-            temp=temp.next;
+        for (int i = 0; i < nums.length; i++) {
+            if (cnt0!=0) {
+                nums[i] = 0;
+                cnt0--;
+                
+            }
+            else if (cnt1!=0) {
+                nums[i] = 1;
+                cnt1--;
+            }
+            else{
+                nums[i]= 2;
+                cnt2--;
+            }
         }
-        return len;
-    }
-
-    public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        Solution solution = new Solution();
-        head = solution.removeNthFromEnd(head, 2);
-        while (head != null) {
-            System.out.println(head.val);
-            head = head.next;
-        }
+        
+        
     }
 }
