@@ -1,18 +1,17 @@
 public class BestTimetoBuyandSellStock2 {
     // Method to calculate the maximum profit from buying and selling stocks
     public static int maxProfit(int[] prices) {
-        int profit = 0; // Variable to store the total profit
-
-        // Iterate through the prices array starting from the second element
-        for (int i = 1; i < prices.length; i++) {
-            // Check if the current price is greater than the previous one
-            if (prices[i] > prices[i - 1]) {
-                // If true, calculate the profit and add it to the total profit
-                profit += (prices[i] - prices[i - 1]);
+        int maxProfit = 0;
+        for (int start = 0; start < prices.length; start++) {
+            for (int end = start + 1; end < prices.length; end++) {
+                int profit = prices[end] - prices[start];
+                if (profit > maxProfit) {
+                    maxProfit = profit;
+                }
             }
         }
-
-        return profit; // Return the total profit
+        return maxProfit;
+    }
     }
 
     // Main method for testing
@@ -23,4 +22,5 @@ public class BestTimetoBuyandSellStock2 {
         // Print the result of the maxProfit method
         System.out.println(maxProfit(prices));
     }
+
 }
