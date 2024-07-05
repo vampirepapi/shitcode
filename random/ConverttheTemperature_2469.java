@@ -1,6 +1,6 @@
 package random;
 
-class Solution {
+public class ConverttheTemperature_2469 {
     public static double[] convertTemperature(double celsius) {
         double fahrenheit = 1.80 * celsius + 32;
         double kelvin = 273.15 + celsius;
