@@ -1,17 +1,21 @@
 package random;
 
 class Solution {
-    public static double[] convertTemperature(double celsius) {
-        double fahrenheit = 1.80 * celsius + 32;
-        double kelvin = 273.15 + celsius;
-        return new double[] { kelvin, fahrenheit };
+    public static int finalValueAfterOperations(String[] operations) {
+        int x = 0;
+        for (String str : operations) {
+            if (str.contains("+")) {
+                x += 1;
+            } else {
+                x -= 1;
+            }
+        }
+        return x;
     }
 
     public static void main(String[] args) {
-        double celsius = 36.50;
-        double[] convertTemperature = convertTemperature(celsius);
-        for (double d : convertTemperature) {
-            System.out.println(d);
-        }
+        String[] oprs = { "++X", "++X", "X++" };
+        int finalValueAfterOperations = finalValueAfterOperations(oprs);
+        System.out.println(finalValueAfterOperations);
     }
 }
