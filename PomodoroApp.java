@@ -32,7 +32,8 @@ public class PomodoroApp {
                             int seconds = timeLeft % 60;
                             int firstDigitOfSeconds = seconds / 10;
                             int lastDigitOfSeconds = seconds % 10;
-                            timerLabel.setText(String.format("<html>%02d:%d<font color='red'>%d</font></html>", minutes, firstDigitOfSeconds, lastDigitOfSeconds));
+                            timerLabel.setText(String.format("<html>%02d:%d<font color='red'>%d</font></html>", minutes,
+                                    firstDigitOfSeconds, lastDigitOfSeconds));
                             if (timeLeft <= 0) {
                                 timer.stop();
                                 timeLeft = POMODORO_TIME;

@@ -1,21 +1,11 @@
 package random;
 
-class Solution {
-    public static int finalValueAfterOperations(String[] operations) {
-        int x = 0;
-        for (String str : operations) {
-            if (str.contains("+")) {
-                x += 1;
-            } else {
-                x -= 1;
-            }
-        }
-        return x;
+/**
+ * Solution
+ */
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(0 % 3);
     }
 
-    public static void main(String[] args) {
-        String[] oprs = { "++X", "++X", "X++" };
-        int finalValueAfterOperations = finalValueAfterOperations(oprs);
-        System.out.println(finalValueAfterOperations);
-    }
 }

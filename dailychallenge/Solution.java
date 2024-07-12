@@ -1,24 +1,24 @@
 package dailychallenge;
 
-import java.util.ArrayList;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+public class Solution {
+	public static int minOperations(String[] logs) {
+		int res = 0;
+		for (String str : logs) {
+			if (str.equals("../")) {
+				if (res > 0) {
+					res--;
+				}
+			} else if (str.equals("./")) {
+				continue;
+			} else {
+				res++;
+			}
+		}
+		return res;
+	}
 
-class Solution {
-    public static int findTheWinner(int n, int k) {
-        ArrayList<Integer> friends = IntStream.range(1, n + 1).boxed().collect(Collectors.toCollection(ArrayList::new));
-        int idx = 0;
-        while (friends.size() > 1) {
-            idx = (idx + k - 1) % friends.size();
-            friends.remove(idx);
-        }
-        return friends.get(0);
-    }
-
-    public static void main(String[] args) {
-        int n = 6, k = 5;
-        int theWinner = findTheWinner(n, k);
-        System.out.println(theWinner);
-
-    }
+	public static void main(String[] args) {
+		String[] logs = { "d1/", "d2/", "./", "d3/", "../", "d31/" };
+		System.out.println(minOperations(logs));
+	}
 }
