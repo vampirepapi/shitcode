@@ -1,5 +1,6 @@
-public class BubbleSort {
+package recursion;
 
+public class BubbleSort {
     public int[] sortArray(int[] nums) {
         for (int i = nums.length - 1; i > 0; i--) {
             boolean flag = false;
