@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoSum_1",
+            "request": "launch",
+            "mainClass": "grind_169.TwoSum_1",
+            "projectName": "shitcode_5ea1b2a7"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
