@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Largestumberinastring",
+            "request": "launch",
+            "mainClass": "tufplus.beginnersproblem.basicstrings.Largestumberinastring",
+            "projectName": "shitcode_5ea1b2a7"
+        },
+        {
+            "type": "java",
             "name": "TwoSum_1",
             "request": "launch",
             "mainClass": "grind_169.TwoSum_1",
