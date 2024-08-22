@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Longestcommonprefix",
+            "request": "launch",
+            "mainClass": "tufplus.beginnersproblem.basicstrings.Longestcommonprefix",
+            "projectName": "shitcode_d369e544"
+        },
+        {
+            "type": "java",
             "name": "Largestumberinastring",
             "request": "launch",
             "mainClass": "tufplus.beginnersproblem.basicstrings.Largestumberinastring",

@@ -1,23 +1,24 @@
 package tufplus.beginnersproblem.basicstrings;
 
-public class Largestumberinastring {
+public class Largestumberinastring {    
     public String largeOddNum(String s) {
-        int maxOdd=-1;
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = i+1; j <= s.length(); j++) {
-                int absVal = Math.abs(Integer.parseInt(s.substring(i, j)));
-                    if (absVal!=0 &&absVal%2!=0) {
-                        maxOdd=Math.max(maxOdd, absVal);
-                    }
+        String ans = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (Character.getNumericValue(s.charAt(i)) % 2 == 1) {  // Check if the digit is odd
+                ans = s.substring(0, i + 1);
+                break;  // No need to check further once the largest odd number is found
             }
         }
-        return maxOdd>0?String.valueOf(maxOdd):"";
+
+        // Remove leading zeros, if any
+        if (!ans.isEmpty() && ans.charAt(0) == '0') {
+            for (int j = 0; j < ans.length(); j++) {
+                if (ans.charAt(j) != '0') {
+                    return ans.substring(j);
+                }
+            }
+        }
+
+        return ans.isEmpty() ? "" : ans;  // Return the result or an empty string if no odd digit found
     }
-    public static void main(String[] args) {
-        String s="7542351161";
-        Largestumberinastring obj = new Largestumberinastring();
-        
-        System.out.println(obj.largeOddNum(s));
-    }
-    
 }
