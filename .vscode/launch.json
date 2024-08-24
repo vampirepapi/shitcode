@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "tufplus.beginnersproblem.basiclinkedlist.LinkedList",
+            "projectName": "shitcode_5ea1b2a7"
+        },
+        {
+            "type": "java",
+            "name": "Sortcharactersbyfrequency",
+            "request": "launch",
+            "mainClass": "tufplus.beginnersproblem.basicstrings.Sortcharactersbyfrequency",
+            "projectName": "shitcode_5ea1b2a7"
+        },
+        {
+            "type": "java",
             "name": "Longestcommonprefix",
             "request": "launch",
             "mainClass": "tufplus.beginnersproblem.basicstrings.Longestcommonprefix",
