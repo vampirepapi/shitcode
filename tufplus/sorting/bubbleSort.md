@@ -1,5 +1,5 @@
-# Bubble Sort
-Bubble sort is a simple comparison-based sorting algorithm that compares adjacent elements and swaps them if they are in the wrong order.
+# Quick Sort
+Quick sort is a sorting algorithm that uses divide and conquer approach. It is similar to merge sort, but it has a time complexity of O(n log n).
 
 ## Quick Sort Algorithm
 - 🔍 **Purpose**: Sort data structures in ascending order
@@ -26,10 +26,10 @@ Bubble sort is a simple comparison-based sorting algorithm that compares adjacen
 - ⚙️ **Time complexity**: O(n log n)
 - 📦 **Space complexity**: O(1) (not counting the recursion stack)
 
-### Some Facts About Bubble Sort
-- The Unix `sort()` utility uses bubble sort.
-- Bubble sort is an in-place sorting algorithm, so its space complexity is O(1).
-- Bubble sort is not stable, meaning it does not preserve the order of equal elements.
+### Some Facts About Quick Sort
+- The Unix `sort()` utility uses Quick sort.
+- Quick sort is an in-place sorting algorithm, so its space complexity is O(1).
+- Quick sort is not stable, meaning it does not preserve the order of equal elements.
 
 ****
 
