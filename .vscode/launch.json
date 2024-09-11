@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongestConsecutiveSequenceinanArray",
+            "request": "launch",
+            "mainClass": "tufplus.hashing.LongestConsecutiveSequenceinanArray",
+            "projectName": "shitcode_bbc1abf6"
+        },
+        {
+            "type": "java",
+            "name": "Intersectionoftwosortedarrays",
+            "request": "launch",
+            "mainClass": "tufplus.arrays.Intersectionoftwosortedarrays",
+            "projectName": "shitcode_bbc1abf6"
+        },
+        {
+            "type": "java",
+            "name": "Findmissingnumber",
+            "request": "launch",
+            "mainClass": "tufplus.arrays.Findmissingnumber",
+            "projectName": "shitcode_bbc1abf6"
+        },
+        {
+            "type": "java",
+            "name": "Removeduplicatesfromsortedarray",
+            "request": "launch",
+            "mainClass": "tufplus.arrays.Removeduplicatesfromsortedarray",
+            "projectName": "shitcode_bbc1abf6"
+        },
+        {
+            "type": "java",
             "name": "LinkedList",
             "request": "launch",
             "mainClass": "tufplus.beginnersproblem.basiclinkedlist.LinkedList",
