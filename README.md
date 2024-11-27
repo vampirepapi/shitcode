@@ -1,10 +1,39 @@
 </>
-- Blind 75: https://leetcode.com/list/oizxjoit
+## Project IDX Configuration -
 
-- Grind 169: https://leetcode.com/list/rabvlt31
+### Adding Java Support on Nix
 
-- Grind 75: https://leetcode.com/list/rab78cw1
+This section explains how to add Java support to your Project IDX environment using Nix.
 
-- Neetcode 150: https://leetcode.com/list/rr2ss0g5
+- **Modifying the `dev.nix` file:**
 
-- SQL 45: https://leetcode.com/list/o2qifkts
+    To enable Java in your IDX workspace, you need to modify the `dev.nix` file, which is located in the `.idx` directory at the root of your project. This file controls the environment configuration for your workspace.
+
+    Here's an example of how to add the Java Development Kit (JDK) 17 to your `dev.nix` file:
+  # Add JDK 17:
+  ```
+  packages = [
+    # pkgs.go
+    pkgs.python311
+    # pkgs.python311Packages.pip
+    # pkgs.nodejs_20
+    # pkgs.nodePackages.nodemon
+    pkgs.jdk17
+  ];
+```
+**Explanation:**
+   
+    *  `packages = [...]`: This line defines the list of packages to be installed in your IDX environment.
+    *  `pkgs.jdk17`: This specifies the package name for JDK 17 in the Nix package manager.
+    *  Comments: You can uncomment the other package lines if you want to add golang,python, nodejs and nodemon to your IDX environment.
+
+
+- **Rebuilding the environment:**
+
+    After modifying the `dev.nix` file, you need to rebuild your IDX environment for the changes to take effect. 
+
+    Click on the "Rebuild Environment" button that appears in the notification or popup in IDX, usually in the bottom right corner. This will reconfigure your workspace with the new package configuration, including Java.
+
+
+
+I hope this updated version is more explanatory! Let me know if you have any other questions.
