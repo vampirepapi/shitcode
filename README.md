@@ -21,14 +21,14 @@ This section explains how to add Java support to your Project IDX environment us
     pkgs.jdk17
   ];
 ```
-**Explanation:**
+Explanation:
    
     *  `packages = [...]`: This line defines the list of packages to be installed in your IDX environment.
     *  `pkgs.jdk17`: This specifies the package name for JDK 17 in the Nix package manager.
     *  Comments: You can uncomment the other package lines if you want to add golang,python, nodejs and nodemon to your IDX environment.
 
 
-- **Rebuilding the environment:**
+- Rebuilding the environment:
 
     After modifying the `dev.nix` file, you need to rebuild your IDX environment for the changes to take effect. 
 
@@ -36,4 +36,3 @@ This section explains how to add Java support to your Project IDX environment us
 
 
 
-I hope this updated version is more explanatory! Let me know if you have any other questions.
