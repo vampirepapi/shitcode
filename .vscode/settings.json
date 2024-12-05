@@ -1,4 +1,14 @@
 {
+    // Enables inline code completion powered by AI.
     "IDX.aI.enableInlineCompletion": true,
-    "IDX.aI.enableCodebaseIndexing": true
+    
+    // Enables indexing of the codebase for AI features.
+    "IDX.aI.enableCodebaseIndexing": true,
+    
+    // Sets the font size in the editor to 18 pixels.
+    "editor.fontSize": 18,
+    
+    // Enables font ligatures for a more visually appealing font.
+    "editor.fontLigatures": true,
+    
 }
