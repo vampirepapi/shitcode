@@ -1,19 +1,19 @@
 package tuf.binarysearch;
 
-class Solution {
-    public int search(int[] nums, int target) {
-        int left = 0;
-        int right = nums.length - 1;
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (nums[mid] == target) {
-                return mid;
-            } else if (nums[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
+public class Solution {
+
+    public long floorSqrt(long n) {
+        long ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (i*i <= n) {
+                ans = i;
             }
         }
-        return -1;
+        return ans;
+    }
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        long n = 28;
+        System.out.println(sol.floorSqrt(n));
     }
 }
